@@ -1,10 +1,13 @@
 import React from 'react'
-import { Box, Button, Typography } from '@mui/material'
+import { Box, } from '@mui/material'
 import Navbar from './components/navbar'
+import ContactUs from './components/ContactUs'
+
 const App = () => {
   return (
     <Box>
-      <Navbar/>
+      <Navbar />
+      <ContactUs />
     </Box>
   )
 }
