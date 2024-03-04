@@ -1,13 +1,13 @@
 import React from 'react'
 import { Box, } from '@mui/material'
-import Navbar from './components/navbar'
+import Header from './components/Header'
 import ContactUs from './components/ContactUs'
 
 const App = () => {
   return (
     <Box>
-      <Navbar />
-      <ContactUs />
+      <Header/>
+        <ContactUs />
     </Box>
   )
 }
