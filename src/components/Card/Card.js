@@ -1,49 +1,41 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import MuiCard from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-//import ListItem from '@mui/material/ListItem';
-
-import Typography from '@mui/material/Typography';
-
+import React from 'react'
+import Box from '@mui/material/Box'
+import MuiCard from '@mui/material/Card'
+import CardActions from '@mui/material/CardActions'
+import CardContent from '@mui/material/CardContent'
+import Button from '@mui/material/Button'
+import Typography from '@mui/material/Typography'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
 import arrowRight from '../../assets/img/arrow-right.svg'
-import strategy from '../../assets/img/strategy.svg'
-import { ListItem } from '@mui/material';
-import styles from './styles';
 
-const Card = () => {
+import styles from './styles'
+
+const Card = ({ title, imgSrc }) => {
     return (
-        <MuiCard >
+        <MuiCard sx={styles.card}>
             <CardContent sx={{ padding: 0 }}>
-                <Box component='img' src={strategy} />
-                <Typography variant='h3'>
-                    stratgeyy
-                </Typography>
+                <Box component='img' src={imgSrc} />
+                <Typography variant='h3'>{title}</Typography>
                 <List>
                     <ListItem sx={styles.listItem}>
-                        <Box component="img" sx={styles.image} src={arrowRight} />
-                        Product management
-                    </ListItem>
-
-                    <ListItem sx={styles.listItem}>
-                        <Box component="img" sx={styles.image} src={arrowRight} />
-                        mvp definition
+                        <Box component='img' src={arrowRight} sx={{ marginRight: '3px' }} />
+                        product manegment
                     </ListItem>
                     <ListItem sx={styles.listItem}>
-                        <Box component="img" sx={styles.image} src={arrowRight} />
-                        Product strategy
-
+                        <Box component='img' src={arrowRight} sx={{ marginRight: '3px' }} />
+                        mpv definition
                     </ListItem>
-
+                    <ListItem sx={styles.listItem}>
+                        <Box component='img' src={arrowRight} sx={{ marginRight: '3px' }} />
+                        product strategy
+                    </ListItem>
                 </List>
             </CardContent>
             <CardActions sx={{ padding: 0 }}>
-                <Button>Read more
-                    <Box component="img" sx={styles.image} src={arrowRight} />
-
+                <Button sx={styles.btn}>
+                    Read More
+                    <Box component='img' src={arrowRight} />
                 </Button>
             </CardActions>
         </MuiCard>

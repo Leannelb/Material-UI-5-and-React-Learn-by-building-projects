@@ -1,4 +1,3 @@
-import Hero from "./Hero";
 
 const styles = {
     hero: (theme) => ({

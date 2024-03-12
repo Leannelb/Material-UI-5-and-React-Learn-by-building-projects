@@ -4,6 +4,7 @@ import Header from './components/Header'
 import ContactUs from './components/ContactUs'
 import Hero from './components/Hero';
 import Card from './components/Card';
+import CreativeDesign from './components/CreativeDesign';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Header />
       <Hero />
       <Card />
+      <CreativeDesign />
       <ContactUs />
     </Box>
   )
