@@ -12,7 +12,6 @@ const App = () => {
     <Box>
       <Header />
       <Hero />
-      <Card />
       <CreativeDesign />
       <Experience />
       <ContactUs />

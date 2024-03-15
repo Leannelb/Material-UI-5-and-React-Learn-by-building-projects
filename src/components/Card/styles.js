@@ -12,6 +12,9 @@ const styles = {
         [theme.breakpoints.up('md')]: {
             maxWidth: '403px',
         },
+        [theme.breakpoints.down('md')]: {
+            maxWidth: '100%',
+        },
     }),
 
     btn: {

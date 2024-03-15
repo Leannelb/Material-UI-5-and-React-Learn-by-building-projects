@@ -13,9 +13,9 @@ const styles = {
         maxWidth: '1240px'
     },
     links: (theme) => ({
+        display: 'flex',
         flexGrow: 1,
         flexWrap: 'wrap',
-        display: 'flex',
         maxWidth: '240px',
         padding: '44px 20px',
         gap: '20px',
