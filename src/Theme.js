@@ -45,8 +45,13 @@ export const theme = createTheme({
         fontSize: '24px',
         lineHeight: '29px'
       }
-    }
+    },
+    someStyles: {
+      fontFamily: 'Montserrat, sans-serif',
+      textTransform: 'capitalize'
+    },
   },
+
   components: {
     // Name of the component
     MuiOutlinedInput: {
